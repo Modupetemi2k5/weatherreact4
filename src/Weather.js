@@ -40,7 +40,8 @@ export default function Weather(props) {
     return ( < div className = "my-form" > { " " } < form onChange = { handleSubmit } > { " " } < input type = "search"
         placeholder = "enter-city"
         value = { city }
-        />{" "} <input type = "submit" value = { search } onSubmit = { searchCity } / > (" ") < /form > { " " } < /div >
+        onSubmit = { searchCity }
+        />{" "} <input type = "submit"  / > (" ") < /form > { " " } < /div >
 
         {
             temperature &&
