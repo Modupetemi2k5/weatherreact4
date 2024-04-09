@@ -82,8 +82,11 @@ export default function Weather(props) {
             {
                 icon && ( < div > { " " } <
                     h1 > Icon: { icon } <
-                    /h1>{" "} < /
+                    /h1>   <
+                    /
                     div >
                 )
             } { " " } < div / >
         );
+        v / >
+    );
