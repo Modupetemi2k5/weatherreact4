@@ -66,8 +66,7 @@ export default function Weather(props) {
             { " " }
 
             {
-                wind && ( < div > { " " } < h1 > Wind: { wind } <
-                    /h1>{" "} 
+                wind && ( < div > { " " } < h1 > Wind: { wind } < /h1>{" "} 
 
                     <
                     /
