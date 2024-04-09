@@ -66,9 +66,7 @@ export default function Weather(props) {
             { " " }
 
             {
-                wind && ( <
-                    div > { " " } <
-                    h1 > Wind: { wind } <
+                wind && ( < div > { " " } < h1 > Wind: { wind } <
                     /h1>{" "} 
 
                     <
@@ -81,12 +79,8 @@ export default function Weather(props) {
 
             {
                 icon && ( < div > { " " } <
-                    h1 > Icon: { icon } <
-                    /h1>   <
-                    /
-                    div >
+                    h1 > Icon: { icon } < /h1>  < /div >
                 )
-            } { " " } < div / >
-        );
-        v / >
-    );
+            } { " " } < /div>
+        )
+    }
