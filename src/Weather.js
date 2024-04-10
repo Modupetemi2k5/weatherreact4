@@ -31,35 +31,24 @@ export default function Weather(props) {
             event.preventDefault();
             setCity(event.target.value);
         }
-        return ( < div className = "returm" > < div className = "my-forrm" > { " " } < form onSubmit = { handleSubmit } > { " " } < input type = "search "
+
+        return ( < div className = "returm" > { " " } < div className = "my-forrm" > { " " } < form onSubmit = { handleSubmit } > { " " } < input type = "search "
             placeholder = "enter-city"
             value = { city }
             onChange = { searchCity }
-            />{" "} <input type ="submit"/ > (" ") { " " } < /form >   { " " } < /div > { " " } {
+            />{" "} <input type="submit"></input > (" ") { " " } < /form > { " " } < div > { " " } {
 
-                temperature && ( < div > { " " } < h1 > Temperature: { temperature } < /h1>{" "} < /
-                    div >
-                )
-            } { " " } {
-                humidity && ( < div > { " " } < h1 > Humidity: { humidity } < /h1>{" "} </div > )
-            }
 
-            { " " }
 
-            {
-                description && ( < div > { " " } < h1 > Description: { description } < /h1>{" "} < div >)
-                }
-
-                { " " }
-
-                {
-                    wind && ( < div > { " " } < h1 > Wind: { wind } < /h1> </div > )
-                }
-
-                { " " }
-
-                {
-                    icon && ( < div > { " " } < h1 > Icon: { icon } < /h1>  < /div > )
-                } { " " } < /div>
-            )
-        }
+            temperature && ( < div > { " " } < h1 > Temperature: { temperature } < /h1>{" "} </div > )
+        } { " " } {
+            humidity && ( < div > { " " } < h1 > Humidity: { humidity } < /h1>{" "} </div > )
+        } { " " } {
+            description && ( < div > { " " } < h1 > Description: { description } < /h1>{" "} </div > )
+        } { " " } {
+            wind && ( < div > { " " } < h1 > Wind: { wind } < /h1>{" "} </div > )
+        } { " " } {
+            icon && ( < div > { " " } < h1 > Icon: { icon } < /h1>{" "} </div > )
+        } { " " } < /div >
+    );
+}
