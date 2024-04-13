@@ -5,9 +5,9 @@ export default function Weather(props) {
   let [city, setCity] = useState(" ");
   let [temperature, setTemperature] = useState(" ");
   let [description, setDesccription] = useState(" ");
-  let [wind, setWind] = useState(" ");
+  let [wind, setWind] = useState(" ")
   let [humidity, setHumidity] = useState(" ");
-  let { icon, setIcon } = useState(" ");
+  let { icon, setIcon } = useState(" ")
 
   function showWeather(response) {
     console.log(response.data);
@@ -37,7 +37,7 @@ export default function Weather(props) {
         <form onSubmit={handleSubmit}>
           {" "}
           <input
-            type="search "
+            type="search "ather
             placeholder="enter-city"
             value={city}
             onChange={searchCity}
