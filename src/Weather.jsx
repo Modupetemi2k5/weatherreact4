@@ -4,15 +4,15 @@ import axios from "axios";
 export default function Weather(props) {
   let [city, setCity] = useState(" ");
   let [temperature, setTemperature] = useState(" ");
-  let [description, setDesccription] = useState(" ");
-  let [wind, setWind] = useState(" ")
+  let [description, setDescription] = useState(" ");
+  let [wind, setWind] = useState(" ");
   let [humidity, setHumidity] = useState(" ");
-  let { icon, setIcon } = useState(" ")
+  let [icon, setIcon] = useState(" ");
 
   function showWeather(response) {
     console.log(response.data);
     setTemperature(response.data.temperature.current);
-    setDesccription(response.data.condition.description);
+    setDescription(response.data.condition.description);
     setHumidity(response.data.temperature.humidity);
     setWind(response.data.wind.speed);
     setIcon(<img alt="icon" src={response.data.condition.icon_url} />);
@@ -42,8 +42,7 @@ export default function Weather(props) {
             value={city}
             onChange={searchCity}
           />{" "}
-          <input type="submit" />
-          (" "){" "}
+          <input type="submit" />{" "}
         </form>{" "}
       </div>{" "}
       {temperature && (
