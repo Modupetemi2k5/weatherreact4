@@ -8,6 +8,9 @@ export default function Weather(props) {
   let [wind, setWind] = useState(" ");
   let [humidity, setHumidity] = useState(" ");
   let [icon, setIcon] = useState(" ");
+  
+  
+
 
   function showWeather(response) {
     console.log(response.data);
